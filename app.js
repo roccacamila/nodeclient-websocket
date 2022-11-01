@@ -10,7 +10,7 @@ stompClient.connect({}, function (frame) {
     stompClient.subscribe('/topic/user', function (user) {
             processMessage(JSON.parse(user.body));
         });
-    stompClient.send("/app/suscribecliente"); //el path es /app/suscribe+nombre del modulo
+    stompClient.send("/app/cliente"); //cambiar cliente por el modulo que corresponda
     });
 
 function disconnect() {
