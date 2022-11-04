@@ -22,6 +22,8 @@ function disconnect() {
 
 
 function processMessage(message) {
-    console.log(message);
+    let a=JSON.parse(message.contenido)
+    console.log(a) //Mensaje.
+    console.log(message.emisor) //Emisor.
 }
 
